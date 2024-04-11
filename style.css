@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "press start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid #eee;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+.between {
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 40px;
+  font-size: 20px;
+}
+.btn {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  font-family: "press start 2P", sans-serif;
+}
+.btn.again {
+  margin-left: 30px;
+}
+.number {
+  border: 2px solid;
+  padding: 10px;
+  height: 80px;
+  width: 150px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 45%;
+  margin-top: 30px;
+  background-color: #eee;
+  color: #222;
+  font-size: 30px;
+}
+.left {
+  padding-left: 100px;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.guess {
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  font-family: "press start 2P", sans-serif;
+  font-size: 30px;
+}
+.btn.check {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.right {
+  margin-top: 120px;
+  margin-left: 500px;
+}
+.right p {
+  margin: 50px;
+  font-size: 15px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.left,
+.right {
+  flex: 1;
+}
+
+/* CSS for smaller screens */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 1.4rem; /* Adjust font size */
+  }
+
+  header {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .between {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .btn.again {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .number {
+    margin: 20px auto;
+  }
+
+  .left {
+    padding: 20px;
+  }
+
+  .right {
+    margin: 20px auto;
+  }
+}
